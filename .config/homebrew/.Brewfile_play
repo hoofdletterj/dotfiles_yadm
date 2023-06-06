@@ -1,0 +1,58 @@
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "homebrew/services"
+tap "homebrew/autoupdate"
+
+
+# -----------------------------------------------------------------------------
+# MacOS App Store
+# -----------------------------------------------------------------------------
+brew "mas"
+
+
+# -----------------------------------------------------------------------------
+# CLI
+# -----------------------------------------------------------------------------
+brew "youtube-dl"
+
+
+
+# -----------------------------------------------------------------------------
+# Apps
+# -----------------------------------------------------------------------------
+#cask "1password"
+
+cask "alfred"
+cask "appcleaner"
+cask "alt-tab"
+cask "bartender"
+cask "calibre"
+cask "double-commander"
+cask "dropbox"
+cask "evernote"
+cask "firefox-developer-edition"
+cask "freetube"
+cask "mkvtoolnix"
+cask "karabiner-elements"
+cask "privadovpn"
+cask "rectangle"
+cask "scummvm"
+cask "signal"
+cask "stats"
+cask "steam"
+cask "the-unarchiver"
+cask "transmission"
+cask "vlc"
+cask "whatsapp"
+mas "Keynote", id:409183694
+mas "Pages", id:409201541
+mas "Flow - Focus & Pomodoro Timer", id:1423210932
+
+
+# -----------------------------------------------------------------------------
+# Fonts & Plugins
+# -----------------------------------------------------------------------------
+cask "font-source-sans-pro"
+cask "font-open-sans"
+cask "font-catamaran"
+cask "font-montserrat"
