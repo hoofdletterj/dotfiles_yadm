@@ -1,0 +1,61 @@
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "homebrew/services"
+tap "shivammathur/php"
+
+
+# -----------------------------------------------------------------------------
+# MacOS App Store
+# -----------------------------------------------------------------------------
+brew "mas"
+
+
+# -----------------------------------------------------------------------------
+# CLI
+# -----------------------------------------------------------------------------
+brew "composer"
+brew "docker-completion"
+brew "docker-composer-completion"
+brew "git"
+brew "curl"
+
+
+# -----------------------------------------------------------------------------
+# Services
+# -----------------------------------------------------------------------------
+brew "dnsmasq"
+brew "nginx"
+brew "node"
+brew "nvm"
+brew "mysql", restart_service: true
+brew "php", restart_service: true
+brew "python"
+brew "redis", restart_service: true
+
+
+# -----------------------------------------------------------------------------
+# Apps
+# -----------------------------------------------------------------------------
+brew "git"
+brew "zsh"
+cask "dbngin"
+cask "docker"
+cask "google-chrome"
+cask "iterm2"
+cask "sequel-ace"
+cask "sourcetree"
+cask "virtualbox"
+cask "visual-studio-code"
+cask "slack"
+
+
+# -----------------------------------------------------------------------------
+# Fonts & plugins
+# -----------------------------------------------------------------------------
+cask "font-fira-code"
+cask "font-meslo-lg-nerd-font"
+cask "font-anonymous-pro"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+brew "zsh-completions"
+brew "zsh-history-substring-search"
