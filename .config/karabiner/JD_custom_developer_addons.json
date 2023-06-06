@@ -1,0 +1,243 @@
+{
+    "title": "Developer addons for VS Code",
+    "author": "Jarno Dijkstra(connect@hoofdletterj.nl)",
+    "hostpage": "https://pqrs.org/osx/karabiner/complex_modifications/",
+    "rules": [{
+            "description": "Equal + Backspace >> Forward_delete",
+            "manipulators": [{
+                "type": "basic",
+                "from": {
+                    "simultaneous": [{
+                            "key_code": "equal_sign"
+                        },
+                        {
+                            "key_code": "delete_or_backspace"
+                        }
+                    ],
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "key_code": "delete_forward"
+                }]
+            }]
+        },
+        {
+            "description": "Capslock + Backspace >> Forward_delete",
+            "manipulators": [{
+                "conditions": [{
+                    "name": "caps_lock pressed",
+                    "type": "variable_if",
+                    "value": 1
+                }],
+                "description": "Backspace >> forward_delete",
+                "from": {
+                    "key_code": "delete_or_backspace",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "key_code": "delete_forward"
+                }],
+                "type": "basic"
+            }]
+        },
+        {
+            "description": "CAPS LOCK navigation powerpack",
+            "manipulators": [{
+                    "conditions": [{
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }],
+                    "description": "Navigation: j == left arrow",
+                    "from": {
+                        "key_code": "j",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "left_arrow"
+                    }],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [{
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }],
+                    "description": "Navigation: k == down arrow",
+                    "from": {
+                        "key_code": "k",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "down_arrow"
+                    }],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [{
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }],
+                    "description": "Navigation: i == up arrow",
+                    "from": {
+                        "key_code": "i",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "up_arrow"
+                    }],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [{
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }],
+                    "description": "Navigation: l == right arrow",
+                    "from": {
+                        "key_code": "l",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "right_arrow"
+                    }],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [{
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }],
+                    "description": "Navigation: u == page up",
+                    "from": {
+                        "key_code": "u",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "page_up"
+                    }],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [{
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }],
+                    "description": "Navigation: o == page down",
+                    "from": {
+                        "key_code": "o",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "page_down"
+                    }],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [{
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }],
+                    "description": "Navigation: ; == alt-right_arrow",
+                    "from": {
+                        "key_code": "semicolon",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "right_arrow",
+                        "modifiers": "left_alt"
+                    }],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [{
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }],
+                    "description": "Navigation: h == alt-left_arrow",
+                    "from": {
+                        "key_code": "h",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [{
+                        "key_code": "left_arrow",
+                        "modifiers": "left_alt"
+                    }],
+                    "type": "basic"
+                },
+                {
+                    "description": "*** Make capslock into a modifier key",
+                    "from": {
+                        "key_code": "caps_lock",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [{
+                        "set_variable": {
+                            "name": "caps_lock pressed",
+                            "value": 1
+                        }
+                    }],
+                    "to_after_key_up": [{
+                        "set_variable": {
+                            "name": "caps_lock pressed",
+                            "value": 0
+                        }
+                    }],
+                    "type": "basic"
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
