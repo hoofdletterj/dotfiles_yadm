@@ -13,8 +13,8 @@ brew "mas"
 # -----------------------------------------------------------------------------
 # CLI
 # -----------------------------------------------------------------------------
+brew yadm
 brew "youtube-dl"
-
 
 
 # -----------------------------------------------------------------------------
@@ -27,6 +27,7 @@ cask "appcleaner"
 cask "alt-tab"
 cask "bartender"
 cask "calibre"
+cask "krisp"
 cask "double-commander"
 cask "dropbox"
 cask "evernote"
@@ -46,6 +47,7 @@ cask "vlc"
 cask "whatsapp"
 mas "Keynote", id:409183694
 mas "Pages", id:409201541
+mas "Numbers", id:409203825
 mas "Flow - Focus & Pomodoro Timer", id:1423210932
 
 
