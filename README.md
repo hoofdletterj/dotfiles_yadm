@@ -2,6 +2,27 @@
 - YADM managed dotfiles
 - installation scripts
 
+# Bootstrapping a Fresh MacOS Install
+Yadm needs to be installed prior to using this repo, and the bootstrap scripts herein. Please follow the next steps to get up and running
+- Open the App Store and Sign-in using your Apple credentials.
+- Install Command Line Tools for Xcode.
+
+```
+xcode-select --install
+```
+- Update MacOS including Command Line Tools for Xcode:
+```
+softwareupdate --all --install --force
+```
+- Install yadm temporarily (the definitive version is installed with Homebrew) in the bootstrap scripts 
+```
+curl -fLo /tmp/yadm https://github.com/TheLocehiliosan/yadm/raw/master/yadm && chmod a+x /tmp/yadm 
+/tmp/yadm clone --bootstrap https://github.com/hoofdletterj/dotfiles.git
+```
+
+# MacOS Desktop and Application Settings
+yadm boostrap is used to configure all aspects of the environment except the MacOS desktop and applications settings. Starting from Mathias Bynens's dotfiles/.macos configuration, I created a macos-settings bootstrap script. This should only be run as needed to avoid unexpected behaviour during the normal bootstrap process.
+
 ## pre-installation setup
 ```
 xcode-select --install
@@ -44,8 +65,22 @@ git clone https://github.com/Aloxaf/fzf-tab ~ZSH_CUSTOM/plugins/fzf-tab
 source ~/.zshrc
 ```
 
+## System configuration
+
+# Disable the sound effects on boot
+```
+sudo nvram SystemAudioVolume=" "
+```
+
+Run the configuration script
+```
+${HOME}/.config/macos/macos-settings
+```
+
 ## Setup 
 - turn on brew autoupdate 
 `brew autoupdate start 86400`
 - Selective sync Apps & App settings folders on Dropbox & make available offline
 - connect 1password to Dropbox
+
+
