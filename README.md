@@ -1,6 +1,6 @@
 # Scripts & dotfiles for clean install
 - YADM managed dotfiles
-- installation scripts
+- bootstrap installation scripts for clean installs
 
 # Bootstrapping a Fresh MacOS Install
 Yadm needs to be installed prior to using this repo, and the bootstrap scripts herein. Please follow the next steps to get up and running
