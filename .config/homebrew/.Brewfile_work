@@ -15,7 +15,7 @@ brew "mas"
 # -----------------------------------------------------------------------------
 brew "composer"
 brew "docker-completion"
-brew "docker-composer-completion"
+brew "docker-compose-completion"
 brew "git"
 brew "curl"
 
