@@ -44,6 +44,7 @@ cask "stats"
 cask "steam"
 cask "the-unarchiver"
 cask "transmission"
+cask "transnomino"
 cask "vlc"
 cask "whatsapp"
 mas "Keynote", id:409183694
