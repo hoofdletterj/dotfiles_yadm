@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
 tap "homebrew/services"
 tap "homebrew/autoupdate"
 
@@ -56,7 +57,7 @@ mas "Flow - Focus & Pomodoro Timer", id:1423210932
 # -----------------------------------------------------------------------------
 # Fonts & Plugins
 # -----------------------------------------------------------------------------
-cask "font-source-sans-pro"
+cask "font-source-code-pro"
 cask "font-open-sans"
 cask "font-catamaran"
 cask "font-montserrat"
