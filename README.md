@@ -31,14 +31,14 @@ xcode-select --install
 
 ## install personal apps
 ```
-curl https://gist.githubusercontent.com/hoofdletterj/44cca73ea1aa88cfa903c1da0ec0d560/raw/2c3ab3c92a29d8fcc21fed240f16a24f27f24786/Brewfile_play -s -o Brewfile
-sudo brew bundle install
+curl https://raw.githubusercontent.com/hoofdletterj/dotfiles_yadm/main/.config/homebrew/.Brewfile_play -s -o Brewfile
+brew bundle install
 ```
 
 ## install work apps
 ```
-curl https://gist.githubusercontent.com/hoofdletterj/44cca73ea1aa88cfa903c1da0ec0d560/raw/d0a5a12d13c5b4cf8ee9c37155f554391a8a1cdf/Brewfile_dev -s -o Brewfile
-sudo brew bundle install
+curl https://raw.githubusercontent.com/hoofdletterj/dotfiles_yadm/main/.config/homebrew/.Brewfile_work -s -o Brewfile
+brew bundle install
 ```
 
 ## SSH keys
