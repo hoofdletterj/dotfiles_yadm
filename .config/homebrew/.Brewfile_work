@@ -45,10 +45,10 @@ cask "firefox-developer-edition"
 cask "google-chrome"
 cask "iterm2"
 cask "sequel-ace"
+cask "slack"
 cask "sourcetree"
 cask "virtualbox"
 cask "visual-studio-code"
-cask "slack"
 mas "Trello", id:1278508951
 
 # -----------------------------------------------------------------------------
