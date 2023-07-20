@@ -80,9 +80,8 @@ ${HOME}/.config/macos/macos-settings
 ## What steps do I need to automate?
 - turn on brew autoupdate 
 `brew autoupdate start 86400`
+- install 1password for CLI
 - Selective sync Apps & App settings folders on Dropbox & make available offline
 - add Karabiner settings to .config folder
-- connect 1password to Dropbox keychains
 - sync Alfred to settings in Apps folder on Dropbox
 - sign in to Firefox and sync settings
-
