@@ -19,6 +19,7 @@ brew "docker-completion"
 brew "docker-compose-completion"
 brew "git"
 brew "curl"
+brew "php-cs-fixer"
 
 
 # -----------------------------------------------------------------------------
